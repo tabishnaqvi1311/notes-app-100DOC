@@ -9,7 +9,7 @@ const noteRoute = require("./routes/notes.js");
 app.use(express.json());
 
 app.use("/api/auth", authRoute);
-app.use("/api/notes", authRoute);
+app.use("/api/notes", noteRoute);
 
 app.listen(port, () => {
     console.log(`server alive on http://localhost:${port}`);
